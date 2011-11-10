@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="wordpress/2.1.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+
+<channel>
+	<title>Midnight Illusions</title>
+	<link>http://nestor.babuine.net</link>
+	<description>... but this, this will be perfect</description>
+	<pubDate>Mon, 25 Jul 2011 16:12:38 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.1.3</generator>
+	<language>en</language>
+			<item>
+		<title>Gendarme and NAnt integration.</title>
+		<link>http://nestor.babuine.net/gendarme/gendarme-and-nant-integration</link>
+		<comments>http://nestor.babuine.net/gendarme/gendarme-and-nant-integration#comments</comments>
+		<pubDate>Thu, 23 Oct 2008 15:23:44 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=47</guid>
+		<description><![CDATA[<p>Yesterday afternoon I was working in <a href="http://nant.sourceforge.net">NAnt</a> and <a href="http://www.mono-project.com/Gendarme">Gendarme</a>, and I published a piece of code that allows run <a href="http://www.mono-project.com/Gendarme">Gendarme</a> in <a href="http://nant.sourceforge.net">NAnt</a>, with a more sophisticated syntax than using exec tag.  You can find it in the <a href="http://groups.google.com/group/Gendarme">Gendarme Google Group</a>.</p>
+<p>I would like to share with you <a href="http://nestor.babuine.net/wp-content/uploads/2008/10/gendarme-nant.ogg" title="Gendarme and NAnt Screencast.">a little screencast</a> I’ve done showing how  <a href="http://nant.sourceforge.net">NAnt</a> executes <a href="http://www.mono-project.com/Gendarme">Gendarme</a>.</p>
+
+<p>Enjoy!</p>
+<p>PS.- Thanks to <a href="http://garuma.wordpress.com">Garuma</a> for his post about Quick and Dirty solution for the wordpress posts!!</p>]]></description>
+			<content:encoded><![CDATA[<p>Yesterday afternoon I was working in <a href="http://nant.sourceforge.net">NAnt</a> and <a href="http://www.mono-project.com/Gendarme">Gendarme</a>, and I published a piece of code that allows run <a href="http://www.mono-project.com/Gendarme">Gendarme</a> in <a href="http://nant.sourceforge.net">NAnt</a>, with a more sophisticated syntax than using exec tag.  You can find it in the <a href="http://groups.google.com/group/Gendarme">Gendarme Google Group</a>.</p>
+<p>I would like to share with you <a href='http://nestor.babuine.net/wp-content/uploads/2008/10/gendarme-nant.ogg' title='Gendarme and NAnt Screencast.'>a little screencast</a> I&#8217;ve done showing how  <a href="http://nant.sourceforge.net">NAnt</a> executes <a href="http://www.mono-project.com/Gendarme">Gendarme</a>.</p>
+<p>Enjoy!</p>
+<p>PS.- Thanks to <a href="http://garuma.wordpress.com">Garuma</a> for his post about Quick and Dirty solution for the wordpress posts!!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/gendarme-and-nant-integration/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Do you imagine Gendarme documentation in Monodoc?</title>
+		<link>http://nestor.babuine.net/gendarme/do-you-imagine-gendarme-documentation-in-monodoc</link>
+		<comments>http://nestor.babuine.net/gendarme/do-you-imagine-gendarme-documentation-in-monodoc#comments</comments>
+		<pubDate>Thu, 16 Oct 2008 17:33:08 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=43</guid>
+		<description><![CDATA[As all people loves screenshots (me too) I would like to share the stuff I&#8217;m cooking now  
+
+It still needs a bit of autotools love, but enjoy the screenshot 
+]]></description>
+			<content:encoded><![CDATA[<p>As all people loves screenshots (me too) I would like to share the stuff I&#8217;m cooking now <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p><a href='http://nestor.babuine.net/wp-content/uploads/2008/10/gendarme_and_monodoc.png' title='Monodoc showing Gendarme Rules'><img src='http://nestor.babuine.net/wp-content/uploads/2008/10/gendarme_and_monodoc.thumbnail.png' alt='Monodoc showing Gendarme Rules' /></a></p>
+<p>It still needs a bit of autotools love, but enjoy the screenshot <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/do-you-imagine-gendarme-documentation-in-monodoc/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>GSoC ended!</title>
+		<link>http://nestor.babuine.net/gendarme/gsoc-ended</link>
+		<comments>http://nestor.babuine.net/gendarme/gsoc-ended#comments</comments>
+		<pubDate>Mon, 25 Aug 2008 22:54:38 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=39</guid>
+		<description><![CDATA[Well, a week has passed since the Summer of Code 2008 finished and I haven&#8217;t wrote anything yet mainly because I took some holidays   Now, with my fully charged batteries I can write a little summary and show some stuff I&#8217;ve done.
+I will start by the beginning  
+There are new rules:
+
+Avoid Calling [...]]]></description>
+			<content:encoded><![CDATA[<p>Well, a week has passed since the Summer of Code 2008 finished and I haven&#8217;t wrote anything yet mainly because I took some holidays <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  Now, with my fully charged batteries I can write a little summary and show some stuff I&#8217;ve done.</p>
+<p>I will start by the beginning <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_razz.gif' alt=':P' class='wp-smiley' /> </p>
+<p>There are new rules:</p>
+<ul>
+<li>Avoid Calling Problematic Methods [IN TRUNK]</li>
+<li>Attribute String Literals Should Parse Correctly [IN TRUNK]</li>
+<li>Provide Correct Arguments To Formatting Methods [IN TRUNK]</li>
+<li>Declare Event Handlers Correctly</li>
+<li>Instantiate Argument Exception Correctly [IN TRUNK]</li>
+<li>Call Base Methods On ISerializable Types [IN TRUNK]</li>
+<li>Implement ISerializable Correctly [IN TRUNK]</li>
+<li>Mark All NonSerializable Fields [IN TRUNK]</li>
+</ul>
+<p>There are 7 new rules in the SVN and the other is in the mono-soc-2008 svn, because I want review it in order to avoid false positives and commit code that works <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> Almost of them, are rules which deals with the implementation and I think they are more useful to the other mono developers.</p>
+<p>In the second place, I should say something about the reporter.</p>
+<p>The reporter is a tool which takes the gendarme reports, in xml format.  The report is passed to a pipeline (you can write your own!) and the pipeline applies some actions (you can write your owns too!) to the input and the input is transformed to other documents.  Let me show you an example:</p>
+<p>You runs gendarme against the corlib, then a report file is generated.  You take the reporter and can generate a master index report or you can filter the defects per severity or &#8230;</p>
+<p>And in the third place, I automated the report generation and publication with a little bash script (which needs a bit more of love).  The script runs gendarme, and pass the output to the report and I publish the results (more or less) frequently, and you can see a little example in: <a href="http://www.babuine.net/gendarme-reports/2.0-reports/08-18-2008/classlib/master-index.xml">The classlib</a> and <a href="http://www.babuine.net/gendarme-reports/2.0-reports/08-18-2008/tools/master-index.xml">the tools</a>.  It&#8217;s a great chance for the newcomers for getting involved in the mono development <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>And this week is the Novell&#8217;s Hack Week, and I hope get some time in order to talk and code with <a href="http://pages.infinit.net/ctech/poupou.html">Sebastien</a>, and I&#8217;m sure we will have more cool news <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>Hope you like all the news!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/gsoc-ended/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>GSoC and Gendarme progress</title>
+		<link>http://nestor.babuine.net/gendarme/gsoc-and-gendarme-progress</link>
+		<comments>http://nestor.babuine.net/gendarme/gsoc-and-gendarme-progress#comments</comments>
+		<pubDate>Wed, 23 Jul 2008 00:06:22 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=38</guid>
+		<description><![CDATA[It was a lot of time since I blogged for the last time, and I should write some news:
+
+Gendarme has reached the 0.2 release.  You can read the release notes if you want more information.
+I have passed the mid-term evaluation and I will continue adding rules, fixes, trimming down false positives &#8230; 
+I&#8217;m generating [...]]]></description>
+			<content:encoded><![CDATA[<p>It was a lot of time since I blogged for the last time, and I should write some news:</p>
+<ul>
+<li>Gendarme has reached the 0.2 release.  You can read the <a href="http://pages.infinit.net/ctech/20080716-1115.html">release notes</a> if you want more information.</li>
+<li>I have passed the mid-term evaluation and I will continue adding rules, fixes, trimming down false positives &#8230; </li>
+<li>I&#8217;m generating with more or less frequence, some gendarme reports applied to the base class library and for other mono tools.  This help me (I hope others too) for write new rules and for trimming down false positives.  When I start to publish them daily I will put the link here <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/gsoc-and-gendarme-progress/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Summer of Code and Gendarme</title>
+		<link>http://nestor.babuine.net/gendarme/summer-of-code-and-gendarme</link>
+		<comments>http://nestor.babuine.net/gendarme/summer-of-code-and-gendarme#comments</comments>
+		<pubDate>Tue, 03 Jun 2008 22:50:53 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=37</guid>
+		<description><![CDATA[Google Summer of Code started the previous week, I can&#8217;t believe I haven&#8217;t blogged anything yet about the topic.
+Let me talk a little about me,  my name is Néstor Salceda and I&#8217;m studying Computer Science and, perhaps, someone will known me yet because this is my second year as student in the Summer of [...]]]></description>
+			<content:encoded><![CDATA[<p>Google Summer of Code started the previous week, I can&#8217;t believe I haven&#8217;t blogged anything yet about the topic.</p>
+<p>Let me talk a little about me,  my name is Néstor Salceda and I&#8217;m studying Computer Science and, perhaps, someone will known me yet because this is my second year as student in the Summer of Code, the first year was wonderful and I decided apply other time <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>This year, my goal is to enhace <a href="http://www.mono-project.com/Gendarme">Gendarme</a> in order to be more useful to the <a href="http://www.mono-project.com">Mono Project</a> itself.  For achieving this goal I have identified 4 key tasks:</p>
+<ul>
+<li>Apply the existing rules.</li>
+<li>Write new rules, putting special effort in write useful rules for implementing the class libraries.</li>
+<li>Apply the new rules to the class libraries.</li>
+<li>Automated Gendarme Reports generation and publication.</li>
+</ul>
+<p>And finally, good luck for all students, and thanks to Mono Project for the opportunity <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/summer-of-code-and-gendarme/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Random thoughts about the Gendarme Rule Day</title>
+		<link>http://nestor.babuine.net/gendarme/random-thoughts-about-the-gendarme-rule-day</link>
+		<comments>http://nestor.babuine.net/gendarme/random-thoughts-about-the-gendarme-rule-day#comments</comments>
+		<pubDate>Sun, 27 Apr 2008 15:01:25 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=36</guid>
+		<description><![CDATA[Well, I&#8217;m proud to say that the first edition of the Gendarme Rule Day has been a great experience and it ended successfully.
+Also give a big thank to all people that was yesterday in the IRC with us (you rocks dudes!).  Thanks for your time, thanks for your ideas, thanks for your presence, thanks [...]]]></description>
+			<content:encoded><![CDATA[<p>Well, I&#8217;m proud to say that the first edition of the Gendarme Rule Day has been a great experience and it ended successfully.</p>
+<p>Also give a <strong>big thank</strong> to all people that was yesterday in the IRC with us (you rocks dudes!).  Thanks for your time, thanks for your ideas, thanks for your presence, thanks for the thanks, thanks for the laughings &#8230; thanks for all.</p>
+<h3>Numbers:</h3>
+<p>In this edition, if my review doesn&#8217;t fail, we have 10 more rules and 3 nice enhacements to existing rules.  And a lot of new ideas for great features.  And also we have new friends and 2 new rule makers: Cedric Vivier and <a href="http://knocte.blogspot.com/">Andrés</a>.</p>
+<h3>Next steps:</h3>
+<p>Well, by myself, I should start finishing several tasks I had started in the past:</p>
+<ul>
+<li>Gendarme and NAnt integration</li>
+<li>Message Chains Smell </li>
+<li>A new way to express custom parameters to the rules in the XML file</li>
+</ul>
+<p>And for finishing, I&#8217;m proud of being part of the <a href="http://www.mono-project.com/Gendarme">Gendarme</a> Team, thanks mates for the <a href="http://pages.infinit.net/ctech/20080425-0920.html">reminders</a>, thanks for your help planning, giving nice tips, staying there and writting <a href="http://anonsvn.mono-project.com/viewcvs/trunk/mono-tools/gendarme/rules/Gendarme.Rules.Performance/UseTypeEmptyTypesRule.cs?view=markup"> new</a> rules.  All I can to say is that we can&#8217;t stop rocking <img src='http://nestor.babuine.net/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> </p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/random-thoughts-about-the-gendarme-rule-day/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>April 26th: You Rule Day!</title>
+		<link>http://nestor.babuine.net/gendarme/april-26th-you-rule-day</link>
+		<comments>http://nestor.babuine.net/gendarme/april-26th-you-rule-day#comments</comments>
+		<pubDate>Wed, 16 Apr 2008 08:49:48 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=35</guid>
+		<description><![CDATA[The Gendarme team is proud to announce the first edition of the Gendarme Rule Day. 
+
+If you have a nice idea for a rule which you&#8217;d like to write or discuss.
+Or if you don&#8217;t have a specific idea but you&#8217;d like to try Gendarme and write a new rule.
+Or if you&#8217;d like improve an existing [...]]]></description>
+			<content:encoded><![CDATA[<p>The Gendarme team is proud to announce the first edition of the Gendarme Rule Day. </p>
+<ul>
+<li>If you have a nice idea for a rule which you&#8217;d like to <a href="http://groups.google.com/group/gendarme/web/how-to-write-cool-rules">write</a> or discuss.</li>
+<li>Or if you <a href="http://groups.google.com/group/gendarme/web/rules">don&#8217;t have a specific idea</a> but you&#8217;d like to try Gendarme and write a new rule.</li>
+<li>Or if you&#8217;d like improve an existing rule.</li>
+<li>Or if you want to learn more about Gendarme ecosystem or Gendarme developer&#8217;s and fans &#8230; </li>
+</ul>
+<p>Please join us April 26th in the #gendarme IRC channel (in irc.gimp.org) for an interactive, collaborative and intense rule writing effort.</p>
+<p>We will be there with you!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/april-26th-you-rule-day/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Gendarme and NAnt</title>
+		<link>http://nestor.babuine.net/gendarme/gendarme-and-nant</link>
+		<comments>http://nestor.babuine.net/gendarme/gendarme-and-nant#comments</comments>
+		<pubDate>Sat, 01 Mar 2008 14:37:05 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=33</guid>
+		<description><![CDATA[Yesterday night, before a week without any free time, I decided spent some time on Gendarme.
+I decided spent some time on integration tasks with others applications (NAnt, XBuild, CC.NET &#8230;) You can read the thread on Gendarme Google Group.  And I started writting a Gendarme Task for NAnt.
+By the moment, as I can&#8217;t capture [...]]]></description>
+			<content:encoded><![CDATA[<p>Yesterday night, before a week without any free time, I decided spent some time on Gendarme.</p>
+<p>I decided spent some time on integration tasks with others applications (NAnt, XBuild, CC.NET &#8230;) You can read the <a href=" http://groups.google.com/group/gendarme/browse_thread/thread/81384cc9adc8ef9d">thread</a> on <a href="http://groups.google.com/group/Gendarme">Gendarme Google Group</a>.  And I started writting a Gendarme Task for <a href="http://nant.sourceforge.net">NAnt</a>.</p>
+<p>By the moment, as I can&#8217;t capture all in an screenshot, you can see it in action in a screencast: <a href='http://nestor.babuine.net/wp-content/uploads/2008/03/gendarmenant.ogg' title='Gendarme and NAnt'>Gendarme and NAnt</a></p>
+<p>Note that it&#8217;s only a prototype, and is under heavy development and it&#8217;s far away to be a usable stuff (by the moment).</p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/gendarme-and-nant/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Gendarme.Framework.Rocks Rocks!</title>
+		<link>http://nestor.babuine.net/gendarme/gendarmeframeworkrocks-rocks</link>
+		<comments>http://nestor.babuine.net/gendarme/gendarmeframeworkrocks-rocks#comments</comments>
+		<pubDate>Wed, 16 Jan 2008 23:17:49 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=31</guid>
+		<description><![CDATA[In the Mono Summit the Gendarme Team discussed about the features for the next version.  We have a lot of new ideas for improve the framework.  The main targets, for the framework, are the following:
+
+Make simpler write rules, and easier to understand.
+Make rules uniform, reduce code duplication, easy testing.
+
+These topics are a bit [...]]]></description>
+			<content:encoded><![CDATA[<p>In the Mono Summit the Gendarme Team discussed about the features for the next version.  We have a lot of new ideas for improve the framework.  The main targets, for the framework, are the following:</p>
+<ul>
+<li>Make simpler write rules, and easier to understand.</li>
+<li>Make rules uniform, reduce code duplication, easy testing.</li>
+</ul>
+<p>These topics are a bit abstract and is a hard task get it completed.  But I believe this is the first step for achieve these topics.</p>
+<p>The main problem when we are writting new rules, is the code duplication.  There are several things we should prepare before write the rule logic.  By example, when a rule is applied?  We have a lot of scenarios before appliying the rule, if the method is anonymous doesn&#8217;t make sense check about the naming conventions, or if a rule must check only the setters.  And is always the same code, repeated one time, other time, another time &#8230; </p>
+<p>It&#8217;s easy to understand that this code should be extracted to other class but, where should we put this code?  The first impression was create static helpers classes, then you can get this code in the rules:</p>
+<p><code><br />
+public MessageCollection CheckMethod (...)<br />
+{<br />
+    if (!MethodHelpers.IsSetter (method))<br />
+        return runner.RuleSuccess;<br />
+    //Imagine more rule logic<br />
+}<br />
+</code> </p>
+<p>It&#8217;s okey, but if we use static classes with static methods and thinking a bit &#8230; Eureka! We can use extension methods to Cecil types, following the <a href="http://evain.net/blog/">JB&#8217;s</a> <a href="http://www.mono-project.com/Rocks">Mono.Rocks</a>, and the rules looks like:</p>
+<p><code><br />
+public MessageCollection CheckMethod (...)<br />
+{<br />
+    if (!method.IsSetter ())<br />
+        return runner.RuleSuccess;<br />
+    //Imagine more rule logic<br />
+}<br />
+</code></p>
+<p>Beautiful code, isn&#8217;t it?</p>
+<p>Then, <a href="http://pages.infinit.net/ctech/poupou.html">Sebastien</a> and GHOP participants (Daniel Abramov, Adrian Tsai and Andreas Noever) implemented some of these Rocks (Good work guys !).  The Rocks have unit tests and documentation, and we can use it for concentrate our effort writting more complete rules (click the image for a bigger size).</p>
+<p>Finally, as all people loves screenshots, this is one screenshot of Monodoc showing the rocks documentation:<br />
+<a href='http://nestor.babuine.net/wp-content/uploads/2008/01/monodoc-rocks.png' title='Monodoc and Rocks'><img src='http://nestor.babuine.net/wp-content/uploads/2008/01/monodoc-rocks.thumbnail.png' alt='Monodoc and Rocks' /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/gendarmeframeworkrocks-rocks/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>After the Mono Summit 07</title>
+		<link>http://nestor.babuine.net/gendarme/after-the-mono-summit-07</link>
+		<comments>http://nestor.babuine.net/gendarme/after-the-mono-summit-07#comments</comments>
+		<pubDate>Tue, 04 Dec 2007 00:05:42 +0000</pubDate>
+		<dc:creator>nestor</dc:creator>
+		
+		<category><![CDATA[Gendarme]]></category>
+
+		<guid isPermaLink="false">http://nestor.babuine.net/?p=30</guid>
+		<description><![CDATA[Wonderful, incredible, fantastic, amazing&#8230; I haven&#8217;t enough words for describing my first Mono Summit. 
+The first day, I was really excited and a bit nervous because I didn&#8217;t know anyone, but quickly I found Sebastien and JB and I sat by them (thanks you for all guys!) and we started talking, and hacking.
+I also can [...]]]></description>
+			<content:encoded><![CDATA[<p>Wonderful, incredible, fantastic, amazing&#8230; I haven&#8217;t enough words for describing my first Mono Summit. </p>
+<p>The first day, I was really excited and a bit nervous because I didn&#8217;t know anyone, but quickly I found <a href="http://pages.infinit.net/ctech/poupou.html">Sebastien</a> and <a href="http://evain.net/blog/">JB</a> and I sat by them (thanks you for all guys!) and we started talking, and hacking.</p>
+<p>I also can see other people from the Mono-Hispano community (Andres, Carlos, Juan Ramon &#8230;) but I missed <a href="http://straybirds130.blogspot.com/">Marcos</a> a mate from the GSoC, I didn&#8217;t meet you, but I hope the next time we will meet.</p>
+<p>All talks also was really interesting: MonoDevelop, NUnit, Boo, Db4o, C# 3.0, Moonlight, Build Service, Boxerp, Debugger &#8230;</p>
+<p>Summarizing, the best: all the people.  Thanks you very much!</p>
+<p>Finally the last day, we discussed the new features for the next Gendarme release, you can see it <a href="http://groups.google.com/group/gendarme/web/roadmap">here</a>.   There are some killer features and a lot of new ideas.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://nestor.babuine.net/gendarme/after-the-mono-summit-07/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

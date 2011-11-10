@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Néstor Salceda" />
+  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/nestor_salceda" />
+  <link rel="stylesheet" href="/screen.css" type="text/css"/>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+  <title>Néstor Salceda</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    $('#rss img').hover(
+      function() {
+        $(this).attr('src', '/images/rss-gray.png');
+      },
+      function() {
+        $(this).attr('src', '/images/rss-blue.png');
+      }
+    );
+  });
+  </script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26204520-1']);
+    _gaq.push(['_setDomainName', 'babuine.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+
+<body>
+<div id="header">
+	<h1><a href="/">Néstor Salceda<img src="/images/hackergotchi.png" width="75" alt="Néstor Salceda"/>
+</a></h1>
+</div>
+
+<div id="content">
+{{ content }}
+</div>
+
+<div id="footer">
+	<ul>
+		<li>Néstor Salceda</li>
+		<li>nestor.salceda@gmail.com</li>
+	</ul>
+	<ul>
+		<li><a href="http://twitter.com/nestor_salceda">http://twitter.com/nestor_salceda</li>
+		<li><a href="http://github.com/nestor-salceda">http://github.com/nestor-salceda</li>
+	</ul>
+	<a id="rss" href="http://feeds.feedburner.com/nestor_salceda"><img src="/images/rss-blue.png" width="38"/></a>
+</div>
+</body>
+</html>

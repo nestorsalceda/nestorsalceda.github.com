@@ -1,0 +1,58 @@
+---
+layout: post
+title: "Gendarme Tasks.  Weekly Status Report #10"
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<h1>This is the status report for July 30 - August 5.</h1>
+
+<h2>Accomplished this week.</h2>
+
+<p>Well, after the review process, <a href="http://monotorrent.blogspot.com/">Alan</a> suggested me that 10 is a big number for a long parameter list.  <a href="http://gameweld-soc.blogspot.com/">Chris</a> also suggested me if there are any way for change values for the rules without recompile.</p>
+
+<p>Then I presented a solution and I wrote a patch for allow put some parameter
+in the gendarme file config.  Then, with the patch you can specify some
+parameters for each ruleset, I like the results and the patch is pending for
+review.</p>
+
+<p>I also finished the Avoid Unused Parameters rule.  <a href="http://monotorrent.blogspot.com/">Alan</a> suggested this rule in the list, and I liked it.  This is because, sometimes, refactoring and removing some parameters, accidentally, I forgot remove the parameter from the method signature.  This rule will check that you use all parameters in the signature.</p>
+
+<h2>Plans for the next week.</h2>
+
+<p>Well, for the next week I have some ideas.  The first will be implement the
+message chain smell.  This smell happens when you make a lot of chained calls.
+By example:</p>
+
+{% highlight csharp %}
+Foo anObject = new Foo ();
+anObject.Bar.ApplyBaz (otherObject).MakeStuff ().Handle ().ToBar ();
+{% endhighlight %}
+
+<p>There are a lot of calls in this line, and you can read more about it in this
+<a href="http://www.soberit.hut.fi/mmantyla/BadCodeSmellsTaxonomy.htm">link</a>.
+Chris has written some code for detect this chains, and I can reuse it.</p>
+
+<p>There are other options, by example Detect long classes.  This smell a bit
+complex to detect, but I believe I can do it.  And with this smell, I have
+finished my 4 comples smells, and I can continue with others (Shotgun surgery,
+feature envy ...)</p>
+
+<h2>Challenges or Problems.</h2>
+
+<p>Nothing special, there was a problem detecting unused parameters.  Specially
+with static methods, but I have fixed it and the rule will be reviewed.</p>
+
+<p>Other challenge was, read, understand and modify the gendarme code; but the
+code is really clear and I like it.  I really enjoyed a lot writting the
+patch.</p>
+
+<h2>Interesting resources.</h2>
+
+<p>Well, I have written a link some lines before.  You can check it <a href="http://www.soberit.hut.fi/mmantyla/BadCodeSmellsTaxonomy.htm">here</a> is another taxonomy for bad smells.</p>
+
+<p>Finally I want thank, all people that helped me, with ideas, with revisions or with other help.  Specially my mentor, <a href="http://pages.infinit.net/ctech/poupou.html">Sebastien</a>, and <a href="http://monotorrent.blogspot.com/">Alan</a>, and <a href="http://gameweld-soc.blogspot.com/">Chris</a> and <a href="http://evain.net/blog/">JB Evain</a> for the corrections and advices in the IRC.</p>

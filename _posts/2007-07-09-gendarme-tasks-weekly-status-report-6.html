@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Gendarme Tasks.  Weekly Status Report #6"
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<h1>This is the status report for July-1 to July-8.</h1>
+
+<h2>Accomplished this week.</h2>
+
+<p>This week I have finished the first scenario for detect smells in the code.
+I have finished the rule for detect code duplicated in same class.  Finally I
+have decided don't use Cecil.FlowAnalysis assembly, because with the new
+approach I need know only a few details about flowanalysis and I can get
+directly with Cecil.  I'm really impressed with Cecil.  Although the rule is
+finished, I will improve more the code for detect code duplicated, because is
+the core for other two rules: Detect code duplicated in two sibling subclasses,
+and detect code duplicated in two unrelated subclasses.</p>
+
+<p>I also have proposed a new rule for detect a new smell.  The rule should detect long methods, the biggest challenge for this rule will be to choose correctly the size for determine when a method is long.  A few hours ago, <a href="http://gameweld-soc.blogspot.com/">Chris Gameweld</a> sent to the group a mail with a cool suggestion.</p>
+
+<h2>Plans for the next week.</h2>
+
+<p>Well, the next week I will finish this rule, and I will propose other rules.
+I have a lot of smells for detect.</p>
+
+<h2>Challenges or problems.</h2>
+
+<p>Yes, the biggest challenge is determine the maximum method size.  By the
+moment I have thought of an screen as the reference measure, if the method is
+bigger then the rule will warn you.</p>
+
+<h2>Interesting resources.</h2>
+
+<p>Yes, I have a lot of interesting resources.</p>
+
+<p>For someone that is interested in smells, you can check this <a href="http://sis36.berkeley.edu/projects/streek/agile/bad-smells-in-code.html#Bad+Smells+in+Code+by+Kent+Beck+and+Martin+Fowler">link</a></p>
+
+<p>Also, you can read some books about, by example:</p>
+
+<ul>
+	<li>Refactoring: Improve the design of existing code. In <a href="http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=pd_bbs_1/002-6813491-9936810?ie=UTF8&s=books&qid=1183933528&sr=8-1">Amazon</a></li>
+	<li>Refactoring to Patterns.  In <a href="http://www.amazon.com/Refactoring-Patterns-Addison-Wesley-Signature-Kerievsky/dp/0321213351/ref=pd_bbs_2/002-6813491-9936810?ie=UTF8&s=books&qid=1183933528&sr=8-2">Amazon</a></li>
+	<li>Code Complete. Second Edition. In <a href="http://www.amazon.com/Code-Complete-Second-Steve-McConnell/dp/0735619670/ref=pd_bbs_4/002-6813491-9936810?ie=UTF8&s=books&qid=1183933528&sr=8-4">Amazon</a></li>
+</ul>
+
+<p>Finally thank, all people that have written advices, or comments for the
+rules.</p>

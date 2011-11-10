@@ -1,0 +1,53 @@
+---
+layout: post
+title: GSoC ended!
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<p>
+Well, a week has passed since the Summer of Code 2008 finished and I haven't
+wrote anything yet mainly because I took some holidays :)  Now, with my fully
+charged batteries I can write a little summary and show some stuff I've
+done.</p>
+
+<p>I will start by the beginning :P</p>
+
+<p>There are new rules:</p>
+
+<ul>
+	<li>Avoid Calling Problematic Methods [IN TRUNK]</li>
+	<li>Attribute String Literals Should Parse Correctly [IN TRUNK]</li>
+	<li>Provide Correct Arguments To Formatting Methods [IN TRUNK]</li>
+	<li>Declare Event Handlers Correctly</li>
+	<li>Instantiate Argument Exception Correctly [IN TRUNK]</li>
+	<li>Call Base Methods On ISerializable Types [IN TRUNK]</li>
+	<li>Implement ISerializable Correctly [IN TRUNK]</li>
+	<li>Mark All NonSerializable Fields [IN TRUNK]</li>
+</ul>
+
+<p> There are 7 new rules in the SVN and the other is in the mono-soc-2008 svn,
+because I want review it in order to avoid false positives and commit code that
+works :) Almost of them, are rules which deals with the implementation and I
+think they are more useful to the other mono developers.</p>
+
+<p>In the second place, I should say something about the reporter.</p>
+
+<p>The reporter is a tool which takes the gendarme reports, in xml format.  The
+report is passed to a pipeline (you can write your own!) and the pipeline
+applies some actions (you can write your owns too!) to the input and the input
+is transformed to other documents.  Let me show you an example:</p>
+
+<p>You runs gendarme against the corlib, then a report file is generated.  You
+take the reporter and can generate a master index report or you can filter the
+defects per severity or ...</p>
+
+<p>And in the third place, I automated the report generation and publication with a little bash script (which needs a bit more of love).  The script runs gendarme, and pass the output to the report and I publish the results (more or less) frequently, and you can see a little example in: <a href="http://www.babuine.net/gendarme-reports/2.0-reports/08-18-2008/classlib/master-index.xml">The classlib</a> and <a href="http://www.babuine.net/gendarme-reports/2.0-reports/08-18-2008/tools/master-index.xml">the tools</a>.  It's a great chance for the newcomers for getting involved in the mono development :)</p>
+
+<p>And this week is the Novell's Hack Week, and I hope get some time in order to talk and code with <a href="http://pages.infinit.net/ctech/poupou.html">Sebastien</a>, and I'm sure we will have more cool news :)</p>
+
+<p>Hope you like all the news!</p>

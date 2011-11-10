@@ -1,0 +1,12 @@
+---
+layout: none
+permalink: .htaccess
+---
+RewriteEngine on
+
+RewriteCond %{QUERY_STRING}  ^cat=8&feed=rss2$
+RewriteRule ^$ /gendarme.xml [L]
+
+Redirect 301 /wp-content/uploads/2008/10/gendarme-nant.ogg http://vimeo.com/31873824
+Redirect 301 /wp-content/uploads/2008/03/gendarmenant.ogg http://vimeo.com/31873885
+Redirect 301 /wp-content/uploads/2007/07/screencast.ogg http://vimeo.com/31873992

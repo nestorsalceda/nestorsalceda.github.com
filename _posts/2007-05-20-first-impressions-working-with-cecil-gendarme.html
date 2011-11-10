@@ -1,0 +1,52 @@
+---
+layout: post
+title: First impressions working with Cecil / Gendarme
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<p>Well, last week I have spent some time learning Cecil and Gendarme stuff.
+I've written my first draft for checking a simple rule and achieve some
+knowledge about these two technologies.  I really enjoyed a lot learning these
+technologies.</p>
+
+<p>I'm going to say my first impressions for each techonlogy.</p>
+
+<ul>
+	<li>Gendarme is simple.  Writting new rules is easy.  You only have to implement an interface.</li>
+	<li>Gendarme is well named.  If you want to create a new rule for check types, you will implement the ITypeRule interface.  If you want to create a new rule for check methods, you will implement the IMethodRule interface.</li>
+	<li>Gendarme isn't intrusive and is powerful. You can write the rule that you want.  You can write simple rules, and also, you can write really complex rules.</li>
+	<li>Gendarme is integrated.  You can use gendarme with different development tools (you can create a NAnt task, you can use with Makefiles) and programming language (you can use VB.NET, you can use Boo).</li>
+	<li>And finally, Gendarme is in continous improvement.</li>
+</ul>
+
+<p>I also think Cecil is a great framework too.  By this moment, I think it's
+simple, it's fast and it's easy deal with it and you have a lot of
+documentation.  I can't write more about Cecil, because Cecil is bigger an I
+will need more time to learn it.</p>
+
+<p>Well, the first rule that I've chosen to implement is that Attributes ends with "Attribute" suffix.</p>
+
+<p>This rule will check that the new attributes ends with "Attribute" suffix.  You can see the reference in <a href="http://www.go-mono.com/docs/index.aspx?link=ecmaspec%3a24.1">C#Language Specification</a>.</p>
+
+<p>Some examples:</p>
+
+<p>Good:</p>
+{% highlight csharp %}
+public class CustomAttribute : Attribute {
+}
+{% endhighlight %}
+
+<p>Bad:</p>
+{% highlight csharp %}
+public class Custom : Attribute {
+}
+{% endhighlight %}
+
+<p>In the next days, I will add more test cases and I will put some links to
+source code to prove that it's really easy write this rules with Gendarme and
+Cecil.</p>

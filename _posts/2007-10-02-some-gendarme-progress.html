@@ -1,0 +1,43 @@
+---
+layout: post
+title: Some Gendarme Progress
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<p>Well, since the Pencils Down Report for the Summer of Code I haven't written
+anything about Gendarme.  I have continued contributing, as I wished, and
+there's time for write a bit about the progress.</p>
+
+<p>The rules for my GSoC has been merged, and there are more improvements:</p>
+
+<ul>
+<li>Install Gendarme.Framework.dll to be reusable with new runners and pkg-config.</li>
+<li>Support inclusion and exclusion of rules.</li>
+<li>Added a new profile.</li>
+</ul>
+
+<p>Step by step, the first feature allows developers to compile their runners
+with the -pkg:gendarme-framework modifiers to [g]mcs.</p>
+
+<p>The second one, allows users to create their custom rulesets and adapt the
+existing ones to their needs.  By example:  Imagine a company that uses Gendarme
+to check their code.  Then they can choose the rules that they apply.  </p>
+
+<p>If, by example, you like check the CodeDuplicatedInSameClass smell and
+AvoidLongMethods smell, but you doesn't like apply the
+AvoidSpeculativeGenerality you could do it simply:</p>
+
+{% highlight xml %}
+<ruleset name="custom">
+    <include="CodeDuplicatedInSameClassRule | AvoidLongMethodsRule" from="Gendarme.Rules.Smells.dll"/>
+</ruleset>
+{% endhighlight %}
+
+<p>And the third one, is the Mono BCL profile.  This profile is intended to use
+with applications or libraries where the public API isn't under our control, by
+example Mono.</p>

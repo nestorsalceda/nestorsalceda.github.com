@@ -1,0 +1,69 @@
+---
+layout: post
+title: Buildix
+published: true
+meta: {}
+
+tags:
+- Agile
+type: post
+status: publish
+---
+<p>Some days before my travel to Valencia, I have seen this amazing tool.</p>
+
+<p><a href="http://buildix.thoughtworks.com/">Buildix</a> is a GNU/Linux
+distribution that combines some tools:</p>
+
+<ul>
+<li><a href="http://trac.edgewall.org/">Trac</a></li>
+<li><a href="http://cruisecontrol.sourceforge.net">CruiseControl</a></li>
+<li><a href="http://subversion.tigris.org">Subversion</a></li>
+</ul>
+
+<p>And all of them with an little apache front end for manage users for all
+components.  I have seen the demo and I decided to try it.</p>
+
+<p>I'm using trac for my projects and subversion, I think that it's a great
+combination.  Trac forces you to think for tickets, you could think tickets as
+little things that add value and for register bugs too.  Then you can only
+concentrate in these tickets and no write more extra code that doesn't add any
+value.</p>
+
+<p>Then, the subversion server allows you to drop code ownership; and in a
+little time you could share your changes and patches.  And one interesting thing
+about trac and subversion, the hooks.  With the hooks, you can write in your svn
+message:</p>
+
+{% highlight text %}
+refs #ticketNumber
+
+Stuff, Foo, Bar ...
+{% endhighlight %}
+
+<p>And then, you can go to the ticket URL in trac and see this changes as
+comments, with this little things you can concentrate about the value.  You also
+can close a ticket.</p>
+
+<p>The only thing that I don't know is CruiseControl, is for create automated
+building and test the application (also pass a pretty printer for code), by this
+time I have only seen working with Java.  I have seen CruiseControl for .NET.  I
+don't know if there are any platform for get continous integration in a more
+generic way, for example: For Java, you can use Maven, or Ant or Makefiles too,
+for Mono you can use NMaven, NAnt and makefiles too.  I believe that one tool
+that be capable to build the entire project in an heterogeneus scenario, for
+example: If you are developing a C# application and build with NAnt, the tool
+take care of this and use NAnt for compile.  The same, if you are writing a Java
+application.  The same if you are writing a C/C++application, using
+Makefiles.</p>
+
+<p>I think we can abstract this component a bit more and get a more generic
+builder, with different backends.</p>
+
+<p>And the last one idea for today, I have think about a distribution for
+developers.  For example, the ubuntu people has the Sun Toolchain for write Java
+applications.  Or the Mono VMWare images for test.  Every developer write the
+code in a different way, but for example a distribution with libraries (log4net,
+nmock, nunit, mono, monodevelop ...)  Or in the Java way a distro including
+(log4java, netbeans or eclipse, java, tomcat, jboss...)</p>
+
+<p>And that's all for today.</p>

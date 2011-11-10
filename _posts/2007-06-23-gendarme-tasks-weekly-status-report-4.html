@@ -1,0 +1,105 @@
+---
+layout: post
+title: "Gendarme Tasks. Weekly Status Report #4"
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<h1>This is the status report for June 18 - June 23</h1>
+
+<h2>Accomplished this week:</h2>
+
+<p>This week I have continued with the Code Duplicated smell.  I'm trying detect
+duplicated code reading IL instructions and checking against others.  Is a
+simple approach and I can detect some code duplicate.  I'm also impressed with
+Cecil, it's a great library and I love the Visitor pattern.</p>
+
+<p>But I'm not happy with the results, because detecting branches is difficult
+and I can't detect all code ways.</p>
+
+<p>By example:  Suppose a simple if statement:</p>
+
+{% highlight csharp %}
+if (myList.Contains ("MoreFoo"))
+        myList.Remove ("MoreFoo");
+{% endhighlight %}
+
+<p>The IL Code generated is the following:</p>
+
+{% highlight text %}
+IL_0000:  ldarg.0
+IL_0001:  ldfld class [mscorlib]System.Collections.IList Test.Rules.Smells.ClassWithCodeDuplicated::myList
+IL_0006:  ldstr "MoreFoo"
+IL_000b:  callvirt instance bool class [mscorlib]System.Collections.IList::Contains(object)
+IL_0010:  brfalse IL_0025
+
+IL_0015:  ldarg.0
+IL_0016:  ldfld class [mscorlib]System.Collections.IList Test.Rules.Smells.ClassWithCodeDuplicated::myList
+IL_001b:  ldstr "MoreFoo"
+IL_0020:  callvirt instance void class [mscorlib]System.Collections.IList::Remove(object)
+IL_0025:  ret
+{% endhighlight %}
+
+<p>I drop out the ldarg, ldfld, ldstr and others, and I get the information for
+compare Instruction Pairs.  And If I write only:</p>
+
+{% highlight csharp %}
+myList.Contains ("MoreFoo");
+myList.Remove ("MoreFoo");
+{% endhighlight %}
+
+<p>The unique difference in the IL code was that I haven't the branch
+instruction.  I can detect simple duplications, but only detecting these ones
+won't be useful.</p>
+
+<p>Then I decided:</p>
+
+<h2>Plans for the next week.</h2>
+
+<p>Following the last lines, I have decided change the code representation, and
+I will use Control Flow Graphs for make some FlowAnalysis and obtain more
+information for detect code complete.</p>
+
+<p>I can get from the CFG the blocks and check blocks.  And better, I can try
+detect common subsets for each block.  With this approach I believe that I can
+write a more complete analysis and detect the code duplication better and in a
+easier way.</p>
+
+<h2>Challenges or Problems.</h2>
+
+<p>Yes, a lot !  For the first, I have decide use the Cecil.FlowAnalysis
+assembly (placed in the cecil module in mono svn) for obtain the CFG, I will
+save a lot of work using this library.  But I have a little trouble.</p>
+
+<p>Yesterday afternoon,  I started working on the CFG analysis, then I started
+building the graphs; and I get a surprise:</p>
+
+{% highlight text %}
+1) Test.Rules.Smells.DetectCodeDuplicatedInSameClassTest.TestClassWithCodeDuplicated : System.ArgumentException : Exception handlers are not supported.
+Parameter name: body
+  at Cecil.FlowAnalysis.Impl.ControlFlow.FlowGraphBuilder..ctor (Mono.Cecil.MethodDefinition method) [0x00000] 
+  at Cecil.FlowAnalysis.FlowGraphFactory.CreateControlFlowGraph (Mono.Cecil.MethodDefinition method) [0x00000] 
+  at Gendarme.Rules.Smells.DetectCodeDuplicatedInSameClassRule.ContainsDuplicatedCode (Mono.Cecil.MethodDefinition currentMethod, Mono.Cecil.MethodDefinition targetMethod) [0x00000] 
+  at Gendarme.Rules.Smells.DetectCodeDuplicatedInSameClassRule.CheckType (Mono.Cecil.TypeDefinition typeDefinition, Gendarme.Framework.Runner runner) [0x00000] 
+  at Test.Rules.Smells.DetectCodeDuplicatedInSameClassTest.TestClassWithCodeDuplicated () [0x00000] 
+  at &lt;0x00000> <unknown method>
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[])
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] 
+  </unknown>
+{% endhighlight %}
+
+<p>Ouch !  Then I believe that I have to write a patch for allow exception
+handlers and build the graph.</p>
+
+<h2>Interesting resources.</h2>
+
+<p>This week, I only have an interesting resource that hope helps me with this
+work, the dragon's book :)</p>
+
+<p>Finally thanks to <a href="http://pages.infinit.net/ctech/poupou.html">Sebastien</a> for solve my doubts.  Also thanks to all mono people, every day I enjoy a bit more working with this great people.</p>
+<p>I want also congratulate the Moonlight accomplishmet, I want try this
+technology!</p>

@@ -1,0 +1,59 @@
+---
+layout: post
+title: "Gendarme Tasks.  Weekly Status Report #12"
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<h1>This is the status report for August 12 - August 17.</h1>
+
+<h2>Accomplished this week.</h2>
+
+<p>Following the Sebastien's wish, I have implemented the Avoid Speculative
+Generality Rule, the rule is now for the reviewing process.  This rule is a
+large rule, because I should check several things.</p>
+
+<p>The rule will check for abstract classes without responsability, unnecesary
+delegation and I have a small solution for the problem with the duplicated
+violations.  I'm going to explain the problem, for example, in the speculative
+generality smell, I have some signs for detect this smell, one of them is that
+exists methods with unused parameters (generally reserved parameters), then some
+weeks ago, I wrote a rule for detect the unused parameters, then I will run
+gendarme and I can get 2 errors:</p>
+
+<ol>
+<li>The error produced by Avoid Speculative Generality Rule.</li>
+<li>The error produced by the Avoid Unused Parameters Rule.</li>
+</ol>
+
+<p>Then, when a detect a fail, the message should be clear and you should find
+the error quickly.  If you get 2 messages, produced by the same error you can
+get confused with the errors.</p>
+
+<p>Then, in the CheckType signature I get a TypeDefinition and a Runner.  The
+runner contains a property for retrieve the rules applied, then I checked if the
+AvoidUnusedParameters rule will be executed (or has been executed), and if the
+rule is present I will skip the checking in the Avoid Speculative Generality
+rule.</p>
+
+<h2>Plans for the next week.</h2>
+
+<p>Sadly,  the Summer of Code starts to end.  I should upload the code, but I
+have a little bit of time for writting the next rule, I have posted the
+specification for the Avoid Code Duplicated In Sibling Classes.  As I wrote
+other rule for check the code duplicated, I only should refactor and get the
+rule.</p>
+
+<h2>Challenges or problems.</h2>
+
+<p>Nothing special, the problem of the violations has been (half) fixed.</p>
+
+<h2>Interesting resource.</h2>
+
+<p>This week, I haven't any interesting resource.</p>
+
+<p>Finally I want thank Sebastien, for give me advices and recomendations.</p>

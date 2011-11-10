@@ -1,0 +1,51 @@
+---
+layout: post
+title: "Gendarme Tasks.  Weekly Status Report #3"
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<h1>This is the status report for June 10 - June 17</h1>
+
+<h2>Accomplished this week.</h2>
+
+<p>This week I have proposed 2 new rules.  The first one is called "Don't
+swallow errors catching nonspecific exceptions".  And the second is the first
+into the smells set, it's called "Detect code duplicated in methods that belongs
+to same class".</p>
+
+<p>I'm working hard in this last rule.</p>
+
+<h2>Plans for the next week.</h2>
+
+<p>The next week, I would like finish this first smell rule.  And purpose other
+rules too.</p>
+
+<p>I have made a plan for finish this first smell.</p>
+
+<p>I've identified 3 main scenarios:</p>
+<ol>
+<li>Code duplicated in the same class.  This happens when you have 2 (or more) methods that have the same expression.  You have to do a "Extract Method" and invoke the code from both places.</li>
+<li>Code duplicated in two sibling subclasses.  Then you can remove the duplication extracting method and pulling it up.  But there are other refactorings to apply here.</li>
+<li>Code duplicated in two unrelated classes.  This scenario can be more difficult to identify.  And I will study it later. </li>
+</ol>
+
+<h2>Challenges or problems.</h2>
+
+<p>I have a really interesting challenge, detect code duplication often isn't
+easy and there are a lot of stuff to do.  Luckyly with the unit test you can see
+quickly if you get your goals.</p>
+
+<p>By the moment, I'm writting this detector using a peephole.  With this
+approach I can check the IL directly without build an AST and I can detect the
+smell in any language (VB, Nemerle ...)</p>
+
+<h2>Interesting resources.</h2>
+
+<p>This week, I have a really interesting resource: <a href="http://www.swerl.tudelft.nl/twiki/pub/Main/StefanSlinger/CodeNose-thesis.pdf">Code Nose Thesis</a>.  This project inspects Java code for detect some smells too.  Thanks to <a href="http://gameweld-soc.blogspot.com/">Chris Gameweld</a> for the link.</p>
+
+<p>I want also thank all people that have written comments for the rules.</p>

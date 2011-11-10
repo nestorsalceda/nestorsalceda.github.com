@@ -1,0 +1,63 @@
+---
+layout: post
+title: Gendarme.Framework.Rocks Rocks!
+published: true
+meta: {}
+
+tags:
+- Gendarme
+type: post
+status: publish
+---
+<p> In the Mono Summit the Gendarme Team discussed about the features for the next version.  We have a lot of new ideas for improve the framework.  The main targets, for the framework, are the following:<p>
+<ul>
+	<li>Make simpler write rules, and easier to understand.</li>
+	<li>Make rules uniform, reduce code duplication, easy testing.</li>
+</ul>
+
+<p>These topics are a bit abstract and is a hard task get it completed.  But I
+believe this is the first step for achieve these topics.</p>
+
+<p>The main problem when we are writting new rules, is the code duplication.
+There are several things we should prepare before write the rule logic.  By
+example, when a rule is applied?  We have a lot of scenarios before appliying
+the rule, if the method is anonymous doesn't make sense check about the naming
+conventions, or if a rule must check only the setters.  And is always the same
+code, repeated one time, other time, another time ... </p>
+
+<p>It's easy to understand that this code should be extracted to other class
+but, where should we put this code?  The first impression was create static
+helpers classes, then you can get this code in the rules:</p>
+
+{% highlight csharp %}
+public MessageCollection CheckMethod (...)
+{
+    if (!MethodHelpers.IsSetter (method))
+        return runner.RuleSuccess;
+    //Imagine more rule logic
+}
+{% endhighlight %}
+
+<p>It's okey, but if we use static classes with static methods and thinking a bit ... Eureka! We can use extension methods to Cecil types, following the <a href="http://evain.net/blog/">JB's</a> <a href="http://www.mono-project.com/Rocks">Mono.Rocks</a>, and the rules looks like:</p>
+
+{% highlight csharp %}
+public MessageCollection CheckMethod (...)
+{
+    if (!method.IsSetter ())
+        return runner.RuleSuccess;
+    //Imagine more rule logic
+}
+{% endhighlight %}
+
+<p>Beautiful code, isn't it?</p>
+
+<p>Then, <a href="http://pages.infinit.net/ctech/poupou.html">Sebastien</a> and
+GHOP participants (Daniel Abramov, Adrian Tsai and Andreas Noever) implemented
+some of these Rocks (Good work guys !).  The Rocks have unit tests and
+documentation, and we can use it for concentrate our effort writting more
+complete rules (click the image for a bigger size).</p>
+
+<p>Finally, as all people loves screenshots, this is one screenshot of Monodoc
+showing the rocks documentation:</p>
+
+<a href='/images/monodoc-rocks.png' title='Monodoc and Rocks'><img width="100%" src='/images/monodoc-rocks.png' alt='Monodoc and Rocks' /></a>
